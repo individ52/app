@@ -27,4 +27,12 @@ const PORT = process.env.PORT || 5000;
 
 // start();
 
-accountService.validateAccountNumber("DE75 5121 0800 1245 1261 99");
+// IBAN Country examples
+// https://www.iban.com/structure
+
+var accountNumber = "CZ5508000000001234567899 ";
+// accountNumber = "DE29100100100987654321";
+
+accountService.validateAccountNumber(accountNumber).then((correct) => {
+    console.log(accountNumber, correct);
+});

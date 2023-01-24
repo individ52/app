@@ -94,19 +94,19 @@ def get_algorithms():
             complementStr = get_text(columns[4])
             complementParts = complementStr.split(",")
             complements = []
-            rangeMark = "−"
+            substractMark = "−"
             replaceMark = "→"
             for complement in complementParts:
                 if(complement == "r"):
                     complements.append({
-                        "type": "range",
+                        "type": "substract",
                         "from": "r",
                         "to": "r"
                     })
-                elif(rangeMark in complement):
-                    parts = complement.split(rangeMark)
+                elif(substractMark in complement):
+                    parts = complement.split(substractMark)
                     complements.append({
-                        "type": "range",
+                        "type": "substract",
                         "from": tryGetNum(parts[0]),
                         "to": tryGetNum(parts[1])
                     })

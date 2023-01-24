@@ -46,7 +46,7 @@
             }
         ]
     },
-    "AX": {
+    "BA": {
         "algorithm": "ISO 7064 MOD-97-10",
         "weights": [],
         "modulo": [
@@ -75,7 +75,7 @@
             }
         ]
     },
-    "CF": {
+    "CZ": {
         "algorithm": "Weighted",
         "weights": [
             6,

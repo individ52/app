@@ -1,0 +1,1030 @@
+{
+    "AL": {
+        "chars": 28,
+        "bbanFormat": [
+            "8n",
+            "16c"
+        ],
+        "ibanFields": "ALkkbbbssssxcccc cccc cccccccc",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "x": " National check digit",
+            "c": " Account numbe"
+        }
+    },
+    "AD": {
+        "chars": 24,
+        "bbanFormat": [
+            "8n",
+            "12c"
+        ],
+        "ibanFields": "ADkkbbbbsssscccc cccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "AT": {
+        "chars": 20,
+        "bbanFormat": [
+            "16n"
+        ],
+        "ibanFields": "ATkkbbbbbccc cccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "AZ": {
+        "chars": 28,
+        "bbanFormat": [
+            "4a",
+            "20c"
+        ],
+        "ibanFields": "AZkkbbbbcccc cccc cccccccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "BH": {
+        "chars": 22,
+        "bbanFormat": [
+            "4a",
+            "14c"
+        ],
+        "ibanFields": "BHkkbbbbcccc cccc cccc cc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "BY": {
+        "chars": 28,
+        "bbanFormat": [
+            "4c",
+            " 4n",
+            " 16c"
+        ],
+        "ibanFields": "BYkkbbbbaaaacccc cccc cccccccc",
+        "comments": {
+            "b": " National bank or branch codea",
+            " ": " Balance account number",
+            "c": " Account numbe"
+        }
+    },
+    "BE": {
+        "chars": 16,
+        "bbanFormat": [
+            "12n"
+        ],
+        "ibanFields": "BEkkbbbcccccccxx",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number",
+            "x": " National check digit"
+        }
+    },
+    "BA": {
+        "chars": 20,
+        "bbanFormat": [
+            "16n"
+        ],
+        "ibanFields": "BAkkbbbsssccccccccxx",
+        "comments": {
+            "k": " IBAN check digits (always \"39\")",
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account number",
+            "x": " National check digit"
+        }
+    },
+    "BR": {
+        "chars": 29,
+        "bbanFormat": [
+            "23n",
+            "1a",
+            "1c"
+        ],
+        "ibanFields": "BRkkbbbbbbbbssss sccc cccc ccctn",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account number",
+            "t": " Account type (cheque account, savings account etc.)n",
+            " ": " Owner account number (\"1\", \"2\" etc.)[39"
+        }
+    },
+    "BG": {
+        "chars": 22,
+        "bbanFormat": [
+            "4a",
+            "6n",
+            "8c"
+        ],
+        "ibanFields": "BGkkbbbbssssttcc cccc cc",
+        "comments": {
+            "b": "BICbank code",
+            "s": " Branch (BAE) number",
+            "t": " Account type",
+            "c": " Account numbe"
+        }
+    },
+    "CR": {
+        "chars": 22,
+        "bbanFormat": [
+            "18n"
+        ],
+        "ibanFields": "CRkk0bbbcccc cccc cccc cc",
+        "comments": {
+            " ": " always zero",
+            "b": " bank code",
+            "c": " Account numbe"
+        }
+    },
+    "HR": {
+        "chars": 21,
+        "bbanFormat": [
+            "17n"
+        ],
+        "ibanFields": "HRkkbbbbbbbccccc cccc c",
+        "comments": {
+            "b": " Bank code",
+            "c": " Account numbe"
+        }
+    },
+    "CY": {
+        "chars": 28,
+        "bbanFormat": [
+            "8n",
+            "16c"
+        ],
+        "ibanFields": "CYkkbbbssssscccc cccc cccccccc",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "CZ": {
+        "chars": 24,
+        "bbanFormat": [
+            "20n"
+        ],
+        "ibanFields": "CZkkbbbbppppsscccccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "p": " Account number prefix",
+            "c": " Account numbe"
+        }
+    },
+    "DK": {
+        "chars": 18,
+        "bbanFormat": [
+            "14n"
+        ],
+        "ibanFields": "DKkkbbbbcccc cccc cx",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number",
+            "x": " National check digi"
+        }
+    },
+    "DO": {
+        "chars": 28,
+        "bbanFormat": [
+            "4a",
+            "20n"
+        ],
+        "ibanFields": "DOkkbbbbcccc cccc cccccccc cccc",
+        "comments": {
+            "b": " Bank identifier",
+            "c": " Account numbe"
+        }
+    },
+    "TL": {
+        "chars": 23,
+        "bbanFormat": [
+            "19n"
+        ],
+        "ibanFields": "TLkkbbbccccc cccccccc cxx",
+        "comments": {
+            "k": " IBAN check digits (always",
+            " ": " \"38\")",
+            "b": " Bank identifier",
+            "c": " Account number",
+            "x": " National check digit"
+        }
+    },
+    "EG": {
+        "chars": 29,
+        "bbanFormat": [
+            "25n"
+        ],
+        "ibanFields": "EGkkbbbbsssscccc cccc cccc cccc c",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "SV": {
+        "chars": 28,
+        "bbanFormat": [
+            "4a",
+            " 20n"
+        ],
+        "ibanFields": "SVkkbbbbcccc cccc cccc cccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "EE": {
+        "chars": 20,
+        "bbanFormat": [
+            "16n"
+        ],
+        "ibanFields": "EEkkbbsscccc cccccccx",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account number",
+            "x": " National check digi"
+        }
+    },
+    "FO": {
+        "chars": 18,
+        "bbanFormat": [
+            "14n"
+        ],
+        "ibanFields": "FOkkbbbbcccc cccc cx",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number",
+            "x": " National check digi"
+        }
+    },
+    "FI": {
+        "chars": 18,
+        "bbanFormat": [
+            "14n"
+        ],
+        "ibanFields": "FIkkbbbbbbcc cccc cx",
+        "comments": {
+            "b": " Bank and branch code",
+            "c": " Account number",
+            "x": " National check digi"
+        }
+    },
+    "FR": {
+        "chars": 27,
+        "bbanFormat": [
+            "10n",
+            "11c",
+            "2n"
+        ],
+        "ibanFields": "FRkkbbbb bssssscccccccccc cxx",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code (code guichet[fr])",
+            "c": " Account number",
+            "x": " National check digits (cl\u00e9 RIB[fr]"
+        }
+    },
+    "GE": {
+        "chars": 22,
+        "bbanFormat": [
+            "2c",
+            "16n"
+        ],
+        "ibanFields": "GEkkbbcc cccc cccc cccc cc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "DE": {
+        "chars": 22,
+        "bbanFormat": [
+            "18n"
+        ],
+        "ibanFields": "DEkkbbbbbbbbcccc cccccc",
+        "comments": {
+            "b": " Bank and branch identifier (Bankleitzahlor BLZ)",
+            "c": " Account numbe"
+        }
+    },
+    "GI": {
+        "chars": 23,
+        "bbanFormat": [
+            "4a",
+            "15c"
+        ],
+        "ibanFields": "GIkkbbbbcccc cccc cccc ccc",
+        "comments": {
+            "b": "BICbank code",
+            "c": " Account numbe"
+        }
+    },
+    "GR": {
+        "chars": 27,
+        "bbanFormat": [
+            "7n",
+            "16c"
+        ],
+        "ibanFields": "GRkkbbbssssccccc cccc cccc ccc",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "GL": {
+        "chars": 18,
+        "bbanFormat": [
+            "14n"
+        ],
+        "ibanFields": "GLkkbbbbcccc cccc cx",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number",
+            "x": " National check digi"
+        }
+    },
+    "GT": {
+        "chars": 28,
+        "bbanFormat": [
+            "4c",
+            "20c"
+        ],
+        "ibanFields": "GTkkbbbbmmttcccc cccc cccccccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numberm",
+            " ": " Currency code",
+            "t": " Account typ"
+        }
+    },
+    "HU": {
+        "chars": 28,
+        "bbanFormat": [
+            "24n"
+        ],
+        "ibanFields": "HUkkbbbssssxcccc cccc cccc cccx",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account number",
+            "x": " National check digi"
+        }
+    },
+    "IS": {
+        "chars": 26,
+        "bbanFormat": [
+            "22n"
+        ],
+        "ibanFields": "ISkkbbssttcc cccciiii iiii ii",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "t": " Account type",
+            "c": " Account number",
+            "i": " Account holder'skennitala(national identification number"
+        }
+    },
+    "IQ": {
+        "chars": 23,
+        "bbanFormat": [
+            "4a",
+            "15n"
+        ],
+        "ibanFields": "IQkkbbbbsssc cccc cccc ccc",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "IE": {
+        "chars": 22,
+        "bbanFormat": [
+            "4c",
+            "14n"
+        ],
+        "ibanFields": "IEkkqqqqbbbb bbcc cccc cc",
+        "comments": {
+            " ": "BICbank code",
+            "b": " Bank/branch code (sort code)",
+            "c": " Account numbe"
+        }
+    },
+    "IL": {
+        "chars": 23,
+        "bbanFormat": [
+            "19n"
+        ],
+        "ibanFields": "ILkkbbbs sscc cccc ccccccc",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account number 13 digits (padded with zeros"
+        }
+    },
+    "IT": {
+        "chars": 27,
+        "bbanFormat": [
+            "1a",
+            "10n",
+            "12c"
+        ],
+        "ibanFields": "ITkkxbbb bbsssssccccc ccccccc",
+        "comments": {
+            "x": " Check character (CIN[it])",
+            "b": " National bank code (Associazione Bancaria ItalianaorCodice ABI)",
+            "s": " Branch code (Coordinate bancarie[it]orCAB\u2013Codice d'Avviamento Bancario)",
+            "c": " Account numbe"
+        }
+    },
+    "JO": {
+        "chars": 30,
+        "bbanFormat": [
+            "4a",
+            "22n"
+        ],
+        "ibanFields": "JOkkbbbbsssscccccccc cccc cccc cc",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "KZ": {
+        "chars": 20,
+        "bbanFormat": [
+            "3n",
+            "13c"
+        ],
+        "ibanFields": "KZkkbbbccccc cccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "XK": {
+        "chars": 20,
+        "bbanFormat": [
+            "4n",
+            "10n",
+            "2n"
+        ],
+        "ibanFields": "XKkkbbbbcccc cccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "KW": {
+        "chars": 30,
+        "bbanFormat": [
+            "4a",
+            "22c"
+        ],
+        "ibanFields": "KWkkbbbbcccc cccccccc cccc cccc cc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number"
+        }
+    },
+    "LV": {
+        "chars": 21,
+        "bbanFormat": [
+            "4a",
+            "13c"
+        ],
+        "ibanFields": "LVkkbbbbcccc cccc cccc c",
+        "comments": {
+            "b": "BICbank code",
+            "c": " Account numbe"
+        }
+    },
+    "LB": {
+        "chars": 28,
+        "bbanFormat": [
+            "4n",
+            "20c"
+        ],
+        "ibanFields": "LBkkbbbbcccc cccc cccccccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "LY": {
+        "chars": 25,
+        "bbanFormat": [
+            "21n"
+        ],
+        "ibanFields": "LYkkbbbs sscc cccc cccc cccc c",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "LI": {
+        "chars": 21,
+        "bbanFormat": [
+            "5n",
+            "12c"
+        ],
+        "ibanFields": "LIkkbbbb bccccccc cccc c",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "LT": {
+        "chars": 20,
+        "bbanFormat": [
+            "16n"
+        ],
+        "ibanFields": "LTkkbbbb bccccccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "LU": {
+        "chars": 20,
+        "bbanFormat": [
+            "3n",
+            "13c"
+        ],
+        "ibanFields": "LUkkbbbccccc cccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "MK": {
+        "chars": 19,
+        "bbanFormat": [
+            "3n",
+            "10c",
+            "2n"
+        ],
+        "ibanFields": "MKkkbbbccccccccc cxx",
+        "comments": {
+            "k": " IBAN check digits (always",
+            " ": " \"07\")",
+            "b": " National bank code",
+            "c": " Account number",
+            "x": " National check digit"
+        }
+    },
+    "MT": {
+        "chars": 31,
+        "bbanFormat": [
+            "4a",
+            "5n",
+            "18c"
+        ],
+        "ibanFields": "MTkkbbbbssss sccccccc cccc cccc ccc",
+        "comments": {
+            "b": "BICbank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "MR": {
+        "chars": 27,
+        "bbanFormat": [
+            "23n"
+        ],
+        "ibanFields": "MRkkbbbb bssssscccccccccc cxx",
+        "comments": {
+            "k": " IBAN check digits (always \"13\")",
+            "b": " National bank code",
+            "s": " Branch code (code guichet[fr])",
+            "c": " Account number",
+            "x": " National check digits (cl\u00e9 RIB[fr]"
+        }
+    },
+    "MU": {
+        "chars": 30,
+        "bbanFormat": [
+            "4a",
+            "19n",
+            "3a"
+        ],
+        "ibanFields": "MUkkbbbb bbsscccc cccc cccc000m mm",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch identifier",
+            "c": " Account number0",
+            " ": " Currency cod"
+        }
+    },
+    "MC": {
+        "chars": 27,
+        "bbanFormat": [
+            "10n",
+            "11c",
+            "2n"
+        ],
+        "ibanFields": "MCkkbbbb bssssscccccccccc cxx",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code (code guichet[fr])",
+            "c": " Account number",
+            "x": " National check digits (cl\u00e9 RIB[fr]')"
+        }
+    },
+    "MD": {
+        "chars": 24,
+        "bbanFormat": [
+            "2c",
+            "18c"
+        ],
+        "ibanFields": "MDkkbbcc cccc cccc cccccccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "ME": {
+        "chars": 22,
+        "bbanFormat": [
+            "18n"
+        ],
+        "ibanFields": "MEkkbbbccccc cccc ccccxx",
+        "comments": {
+            "k": " IBAN check digits (always",
+            " ": " \"25\")",
+            "b": " Bank code",
+            "c": " Account number",
+            "x": " National check digit"
+        }
+    },
+    "NL": {
+        "chars": 18,
+        "bbanFormat": [
+            "4a",
+            "10n"
+        ],
+        "ibanFields": "NLkkbbbbcccc cccccc",
+        "comments": {
+            "b": "BICBank code",
+            "c": " Account numbe"
+        }
+    },
+    "NO": {
+        "chars": 15,
+        "bbanFormat": [
+            "11n"
+        ],
+        "ibanFields": "NOkkbbbbccccccx",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number",
+            "x": " Modulo-11 national check digi"
+        }
+    },
+    "PK": {
+        "chars": 24,
+        "bbanFormat": [
+            "4c",
+            "16n"
+        ],
+        "ibanFields": "PKkkbbbbcccc cccc cccccccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "PS": {
+        "chars": 29,
+        "bbanFormat": [
+            "4c",
+            "21n"
+        ],
+        "ibanFields": "PSkkbbbbcccc cccc cccccccc cccc c",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "PL": {
+        "chars": 28,
+        "bbanFormat": [
+            "24n"
+        ],
+        "ibanFields": "PLkkbbbssssxcccc cccc cccccccc",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch code",
+            "x": " National check digit",
+            "c": " Account number"
+        }
+    },
+    "PT": {
+        "chars": 25,
+        "bbanFormat": [
+            "21n"
+        ],
+        "ibanFields": "PTkkbbbbsssscccc cccc cccx x",
+        "comments": {
+            "k": " IBAN check digits (always",
+            " ": " \"50\")",
+            "b": " National bank code (numeric only)",
+            "s": " Branch code (numeric only)",
+            "c": " Account number (numeric only)",
+            "x": " National check digits (numeric only"
+        }
+    },
+    "QA": {
+        "chars": 29,
+        "bbanFormat": [
+            "4a",
+            "21c"
+        ],
+        "ibanFields": "QAkkbbbbcccc cccc cccccccc cccc c",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number[40"
+        }
+    },
+    "RO": {
+        "chars": 24,
+        "bbanFormat": [
+            "4a",
+            "16c"
+        ],
+        "ibanFields": "ROkkbbbbcccc cccc cccccccc",
+        "comments": {
+            "b": "BICBank code (first four alpha characters)",
+            "c": " Branch code and account number (bank-specific format"
+        }
+    },
+    "RU": {
+        "chars": 33,
+        "bbanFormat": [
+            "14n",
+            "15c"
+        ],
+        "ibanFields": "RUkkbbbb bbbb bsss sscc cccc cccc cccc c",
+        "comments": {
+            "b": " Bank code",
+            "s": " Branch code",
+            "c": " Account numbe"
+        }
+    },
+    "LC": {
+        "chars": 32,
+        "bbanFormat": [
+            "4a",
+            "24c"
+        ],
+        "ibanFields": "LCkkbbbbcccc cccc cccc cccc cccc cccc",
+        "comments": {
+            "b": " Bank code",
+            "c": " Account numbe"
+        }
+    },
+    "SM": {
+        "chars": 27,
+        "bbanFormat": [
+            "1a",
+            "10n",
+            "12c"
+        ],
+        "ibanFields": "SMkkxbbbbbsssssccccc ccccccc",
+        "comments": {
+            "x": " Check character (CIN[it])",
+            "b": " National bank code (Associazione bancaria italianaorCodice ABI)",
+            "s": " Branch code (Coordinate bancarie[it]orCAB\u2013Codice d'Avviamento Bancario)",
+            "c": " Account numbe"
+        }
+    },
+    "ST": {
+        "chars": 25,
+        "bbanFormat": [
+            "21n"
+        ],
+        "ibanFields": "STkkbbbbsssscccc cccc cccc c",
+        "comments": {
+            "b": " National bank code",
+            "s": " Branch number",
+            "c": " Account numbe"
+        }
+    },
+    "SA": {
+        "chars": 24,
+        "bbanFormat": [
+            "2n",
+            "18c"
+        ],
+        "ibanFields": "SAkkbbcc cccc cccc cccccccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number preceded by zeros, if require"
+        }
+    },
+    "RS": {
+        "chars": 22,
+        "bbanFormat": [
+            "18n"
+        ],
+        "ibanFields": "RSkkbbbccccc cccc ccccxx",
+        "comments": {
+            "k": " IBAN check digits (always",
+            " ": " \"35\")",
+            "b": " National bank code",
+            "c": " Account number",
+            "x": " Account check digit"
+        }
+    },
+    "SC": {
+        "chars": 31,
+        "bbanFormat": [
+            "4a",
+            "20n",
+            "3a"
+        ],
+        "ibanFields": "SCkkbbbb bbsscccc cccc cccc ccccmmm",
+        "comments": {
+            "b": " Bank code",
+            "s": " Branch code",
+            "c": " Account numberm",
+            " ": " Currency cod"
+        }
+    },
+    "SK": {
+        "chars": 24,
+        "bbanFormat": [
+            "20n"
+        ],
+        "ibanFields": "SKkkbbbbppppsscccccc cccc",
+        "comments": {
+            "b": " National bank code",
+            "p": " Account number prefix",
+            "c": " Account numbe"
+        }
+    },
+    "SI": {
+        "chars": 19,
+        "bbanFormat": [
+            "15n"
+        ],
+        "ibanFields": "SIkkbbss sccccccc cxx",
+        "comments": {
+            "k": " IBAN check digits (always",
+            " ": " \"56\")",
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account number",
+            "x": " National check digit"
+        }
+    },
+    "ES": {
+        "chars": 24,
+        "bbanFormat": [
+            "20n"
+        ],
+        "ibanFields": "ESkkbbbbssssxxcc cccc cccc",
+        "comments": {
+            "k": " Iban check digits code",
+            "b": " National bank",
+            "s": " Branch code",
+            "x": " Check digits",
+            "c": " Account numbe"
+        }
+    },
+    "SD": {
+        "chars": 18,
+        "bbanFormat": [
+            "14n"
+        ],
+        "ibanFields": "SDkkbbcccccc cccc cc",
+        "comments": {
+            "k": " IBAN check digits",
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "SE": {
+        "chars": 24,
+        "bbanFormat": [
+            "20n"
+        ],
+        "ibanFields": "SEkkbbbccccc cccc cccccccx",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account number",
+            "x": " Check digit"
+        }
+    },
+    "CH": {
+        "chars": 21,
+        "bbanFormat": [
+            "5n",
+            "12c"
+        ],
+        "ibanFields": "CHkkbbbb bccccccc cccc c",
+        "comments": {
+            "b": " National bank code",
+            "c": " Code identifying a bank accoun"
+        }
+    },
+    "TN": {
+        "chars": 24,
+        "bbanFormat": [
+            "20n"
+        ],
+        "ibanFields": "TNkkbbss sccccccc cccc ccxx",
+        "comments": {
+            "k": " IBAN check digits (always \"59\")",
+            "b": " National bank code",
+            "s": " Branch code",
+            "c": " Account number",
+            "x": " National check digit"
+        }
+    },
+    "TR": {
+        "chars": 26,
+        "bbanFormat": [
+            "5n",
+            "17c"
+        ],
+        "ibanFields": "TRkkbbbb b0cc cccc cccc cccc cc",
+        "comments": {
+            "b": " National bank code0",
+            " ": " Zero (reserved)",
+            "c": " Account numbe"
+        }
+    },
+    "UA": {
+        "chars": 29,
+        "bbanFormat": [
+            "6n",
+            " 19c"
+        ],
+        "ibanFields": "UAkkbbbb bbcc cccc cccc cccc cccc c",
+        "comments": {
+            "b": " Bank code",
+            "c": " Account number preceded by zeros, if require"
+        }
+    },
+    "AE": {
+        "chars": 23,
+        "bbanFormat": [
+            "3n",
+            "16n"
+        ],
+        "ibanFields": "AEkkbbbccccc cccc cccc ccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "GB": {
+        "chars": 22,
+        "bbanFormat": [
+            "4a",
+            "14n"
+        ],
+        "ibanFields": "GBkkbbbbsssssscccccccc",
+        "comments": {
+            "b": "BICbank code",
+            "s": " Bank and branch code (sort code)",
+            "c": " Account numbe"
+        }
+    },
+    "VA": {
+        "chars": 22,
+        "bbanFormat": [
+            "3n",
+            "15n"
+        ],
+        "ibanFields": "VAkkbbbccccc cccc cccc cc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    },
+    "VG": {
+        "chars": 24,
+        "bbanFormat": [
+            "4c",
+            "16n"
+        ],
+        "ibanFields": "VGkkbbbbcccc cccc cccccccc",
+        "comments": {
+            "b": " National bank code",
+            "c": " Account numbe"
+        }
+    }
+}

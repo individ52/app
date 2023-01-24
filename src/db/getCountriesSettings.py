@@ -5,13 +5,16 @@ import requests
 from bs4 import BeautifulSoup
 
 HOST = 'https://en.wikipedia.org/wiki/International_Bank_Account_Number'
+WIKI_HOST = "https://en.wikipedia.org"
 HEADERS = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)', 'accept': '*/*'}
 BASE_PATH = "./src/db"
 
-def saveAlgorithms(data):
+countryCodes = {}
+
+def saveJson(name, data):
     json_obj = json.dumps(data, indent=4)
-    with open(BASE_PATH + "/country-algorithms.json", "w") as outfile:
+    with open(BASE_PATH + "/" + name + ".json", "w") as outfile:
         outfile.write(json_obj)
 
 def get_html(url, params=None):
@@ -42,6 +45,22 @@ def tryGetNum(num):
     except:
         return num
 
+# def get_country_code(link):
+#     html = get_html(WIKI_HOST + link)
+#     algorithms = {}
+#     debug = "East_Timor" in link
+#     if(html.status_code == 200):
+#         soup = BeautifulSoup(html.text, 'html.parser')
+#         wholeTables = soup.find_all("table")
+#         wholeTable = soup.find_all("table")[0]
+#         for table in wholeTables:
+#             links = table.select("[href*='ISO_3166-2']")
+#             if(len(links) == 1):
+
+#                 return get_text(links[0])
+       
+    
+
 def get_algorithms():
     html = get_html(HOST)
     algorithms = {}
@@ -55,6 +74,12 @@ def get_algorithms():
         for row in rows:
             columns = row.find_all("td")
             countryName = get_text(columns[0].find("a"))
+            if(not countryName in countryCodes):
+                print(countryName)
+                exit()
+
+            countryName = countryCodes[countryName]
+
             algorithmName = get_text(columns[1])
             weightsStr = get_text(columns[2])
             weightsStrs = weightsStr.split(",")
@@ -100,32 +125,67 @@ def get_algorithms():
                 "complements": complements
             }
 
+        return algorithms
+
+def get_format():
+    html = get_html(HOST)
+    algorithms = {}
+    if(html.status_code == 200):
+        soup = BeautifulSoup(html.text, 'html.parser')
+        tables = soup.find_all("table")
+        # online_status = get_text(online_block)
+        tableAlgorithms = tables[3].find("tbody")
+        rows = tableAlgorithms.find_all("tr")
+        rows.pop(0)
+        for row in rows:
+            columns = row.find_all("td")
+            countryName = get_text(columns[0].find("a"))
+            charsCount = get_text(columns[1])
+            bbanFormats = get_text(columns[2]).split(",")
+            ibanFields = get_text(columns[3])
+            countryCodes[countryName] = ibanFields[0:2]
+            commentStr = get_text(columns[4])
+            commentParts = commentStr.split("=")
+            comments = {}
+            for i in range(1, len(commentParts)):
+                key = commentParts[i-1][-1]
+                value = commentParts[i][0:-1]
+                comments[key] = value
+
+            formatData = {
+                "chars": tryGetNum(charsCount),
+                "bbanFormat": bbanFormats,
+                "ibanFields": ibanFields,
+                "comments": comments
+            }
+            algorithms[countryCodes[countryName]] = formatData
 
         return algorithms
 
-def convert_country_to_code(algorithms):
-    countryCodes = getJsonData(BASE_PATH + "/country-codes.json", [])
-    def byName(c_name):
-        def f(x):
-            parts = c_name.upper().split(" ")
-            curVal = x["name"].upper()
-            ok = False
-            for part in parts:
-                if(part in curVal): ok = True
-            return ok
-        return f 
-    newAlgorithms = {}
-    for countryName in algorithms:
-        codeData = list(filter(byName(countryName), countryCodes))
-        code = codeData[0]["code"]
-        newAlgorithms[code] = algorithms[countryName] 
+# def convert_country_to_code(algorithms):
+#     countryCodes = getJsonData(BASE_PATH + "/country-codes.json", [])
+#     def byName(c_name):
+#         def f(x):
+#             name = c_name.upper()
+#             curVal = x["name"].upper()
+#             if(name == curVal): return True
+#             parts = name.split(" ")
+#             ok = False
+#             for part in parts:
+#                 if(part in curVal): ok = True
+#             return ok
+#         return f 
+#     newAlgorithms = {}
+#     for countryName in algorithms:
+#         codeData = list(filter(byName(countryName), countryCodes))
+#         code = codeData[0]["code"]
+#         print(countryName, code)
+#         print(code)
+#         newAlgorithms[code] = algorithms[countryName] 
     
-    return newAlgorithms
+#     return newAlgorithms
 
-algorithms = get_algorithms()
-algorithms = convert_country_to_code(algorithms)
-saveAlgorithms(algorithms)
-
+saveJson("country-formats", get_format())
+saveJson("country-algorithms", get_algorithms())
 
 
-print(algorithms)

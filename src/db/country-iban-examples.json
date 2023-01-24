@@ -1,0 +1,330 @@
+[
+    {
+        "name": "Albania",
+        "example": "AL35202111090000000001234567"
+    },
+    {
+        "name": "Andorra",
+        "example": "AD1400080001001234567890"
+    },
+    {
+        "name": "Austria",
+        "example": "AT483200000012345864"
+    },
+    {
+        "name": "Azerbaijan",
+        "example": "AZ77VTBA00000000001234567890"
+    },
+    {
+        "name": "Bahrain",
+        "example": "BH02CITI00001077181611"
+    },
+    {
+        "name": "Belgium",
+        "example": "BE71096123456769"
+    },
+    {
+        "name": "Bosnia and Herzegovina",
+        "example": "BA393385804800211234"
+    },
+    {
+        "name": "Brazil",
+        "example": "BR1500000000000010932840814P2"
+    },
+    {
+        "name": "Bulgaria",
+        "example": "BG18RZBB91550123456789"
+    },
+    {
+        "name": "Costa Rica",
+        "example": "CR23015108410026012345"
+    },
+    {
+        "name": "Croatia",
+        "example": "HR1723600001101234565"
+    },
+    {
+        "name": "Cyprus",
+        "example": "CY21002001950000357001234567"
+    },
+    {
+        "name": "Czech Republic",
+        "example": "CZ5508000000001234567899"
+    },
+    {
+        "name": "Faroe Islands",
+        "example": "FO9264600123456789"
+    },
+    {
+        "name": "Greenland",
+        "example": "GL8964710123456789"
+    },
+    {
+        "name": "Denmark",
+        "example": "DK9520000123456789"
+    },
+    {
+        "name": "Dominican Republic",
+        "example": "DO22ACAU00000000000123456789"
+    },
+    {
+        "name": "Estonia",
+        "example": "EE471000001020145685"
+    },
+    {
+        "name": "Egypt",
+        "example": "EG800002000156789012345180002"
+    },
+    {
+        "name": "Finland",
+        "example": "FI1410093000123458"
+    },
+    {
+        "name": "France",
+        "example": "FR7630006000011234567890189"
+    },
+    {
+        "name": "Georgia",
+        "example": "GE60NB0000000123456789"
+    },
+    {
+        "name": "Germany",
+        "example": "DE75512108001245126199"
+    },
+    {
+        "name": "Gibraltar",
+        "example": "GI56XAPO000001234567890"
+    },
+    {
+        "name": "Greece",
+        "example": "GR9608100010000001234567890"
+    },
+    {
+        "name": "Guatemala",
+        "example": "GT20AGRO00000000001234567890"
+    },
+    {
+        "name": "Hungary",
+        "example": "HU93116000060000000012345676"
+    },
+    {
+        "name": "Iceland",
+        "example": "IS750001121234563108962099"
+    },
+    {
+        "name": "Ireland",
+        "example": "IE64IRCE92050112345678"
+    },
+    {
+        "name": "Israel",
+        "example": "IL170108000000012612345"
+    },
+    {
+        "name": "Italy",
+        "example": "IT60X0542811101000000123456"
+    },
+    {
+        "name": "Jordan",
+        "example": "JO71CBJO0000000000001234567890"
+    },
+    {
+        "name": "Kazakhstan",
+        "example": "KZ244350000012344567"
+    },
+    {
+        "name": "Kosovo",
+        "example": "XK051212012345678906"
+    },
+    {
+        "name": "Kuwait",
+        "example": "KW81CBKU0000000000001234560101"
+    },
+    {
+        "name": "Latvia",
+        "example": "LV97HABA0012345678910"
+    },
+    {
+        "name": "Lebanon",
+        "example": "LB92000700000000123123456123"
+    },
+    {
+        "name": "Liechtenstein",
+        "example": "LI7408806123456789012"
+    },
+    {
+        "name": "Lithuania",
+        "example": "LT601010012345678901"
+    },
+    {
+        "name": "Luxembourg",
+        "example": "LU120010001234567891"
+    },
+    {
+        "name": "North Macedonia",
+        "example": "MK07200002785123453"
+    },
+    {
+        "name": "Malta",
+        "example": "MT31MALT01100000000000000000123"
+    },
+    {
+        "name": "Mauritania",
+        "example": "MR1300020001010000123456753"
+    },
+    {
+        "name": "Mauritius",
+        "example": "MU43BOMM0101123456789101000MUR"
+    },
+    {
+        "name": "Moldova",
+        "example": "MD21EX000000000001234567"
+    },
+    {
+        "name": "Monaco",
+        "example": "MC5810096180790123456789085"
+    },
+    {
+        "name": "Montenegro",
+        "example": "ME25505000012345678951"
+    },
+    {
+        "name": "Netherlands",
+        "example": "NL02ABNA0123456789"
+    },
+    {
+        "name": "Norway",
+        "example": "NO8330001234567"
+    },
+    {
+        "name": "Pakistan",
+        "example": "PK36SCBL0000001123456702"
+    },
+    {
+        "name": "Palestine",
+        "example": "PS92PALS000000000400123456702"
+    },
+    {
+        "name": "Poland",
+        "example": "PL10105000997603123456789123"
+    },
+    {
+        "name": "Portugal",
+        "example": "PT50002700000001234567833"
+    },
+    {
+        "name": "Qatar",
+        "example": "QA54QNBA000000000000693123456"
+    },
+    {
+        "name": "Romania",
+        "example": "RO66BACX0000001234567890"
+    },
+    {
+        "name": "San Marino",
+        "example": "SM76P0854009812123456789123"
+    },
+    {
+        "name": "Saint Lucia",
+        "example": "LC14BOSL123456789012345678901234"
+    },
+    {
+        "name": "Sao Tome and Principe",
+        "example": "ST23000200000289355710148"
+    },
+    {
+        "name": "Saudi Arabia",
+        "example": "SA4420000001234567891234"
+    },
+    {
+        "name": "Serbia",
+        "example": "RS35105008123123123173"
+    },
+    {
+        "name": "Slovakia",
+        "example": "SK8975000000000012345671"
+    },
+    {
+        "name": "Slovenia",
+        "example": "SI56192001234567892"
+    },
+    {
+        "name": "Spain",
+        "example": "ES7921000813610123456789"
+    },
+    {
+        "name": "Sweden",
+        "example": "SE7280000810340009783242"
+    },
+    {
+        "name": "Switzerland",
+        "example": "CH5604835012345678009"
+    },
+    {
+        "name": "Timor-Leste",
+        "example": "TL380010012345678910106"
+    },
+    {
+        "name": "Tunisia",
+        "example": "TN5904018104004942712345"
+    },
+    {
+        "name": "Turkey",
+        "example": "TR320010009999901234567890"
+    },
+    {
+        "name": "United Arab Emirates",
+        "example": "AE460090000000123456789"
+    },
+    {
+        "name": "United Kingdom",
+        "example": "GB33BUKB20201555555555"
+    },
+    {
+        "name": "Holy See (the)",
+        "example": "VA59001123000012345678"
+    },
+    {
+        "name": "Virgin Islands, British",
+        "example": "VG07ABVI0000000123456789"
+    },
+    {
+        "name": "Ukraine",
+        "example": "UA903052992990004149123456789"
+    },
+    {
+        "name": "Seychelles",
+        "example": "SC74MCBL01031234567890123456USD"
+    },
+    {
+        "name": "Iraq",
+        "example": "IQ20CBIQ861800101010500"
+    },
+    {
+        "name": "Belarus",
+        "example": "BY86AKBB10100000002966000000"
+    },
+    {
+        "name": "El Salvador",
+        "example": "SV43ACAT00000000000000123123"
+    },
+    {
+        "name": "Libya",
+        "example": "LY38021001000000123456789"
+    },
+    {
+        "name": "Sudan",
+        "example": "SD8811123456789012"
+    },
+    {
+        "name": "Burundi",
+        "example": "BI43220001131012345678912345"
+    },
+    {
+        "name": "Djibouti",
+        "example": "DJ2110002010010409943020008"
+    },
+    {
+        "name": "Russia",
+        "example": "RU0204452560040702810412345678901"
+    }
+]

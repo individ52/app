@@ -30,7 +30,7 @@ const PORT = process.env.PORT || 5000;
 // IBAN Country examples
 // https://www.iban.com/structure
 
-var accountNumber = "CZ5508000000001234567899 ";
+var accountNumber = "EE471000001020145685";
 // accountNumber = "DE29100100100987654321";
 
 accountService.validateAccountNumber(accountNumber).then((correct) => {

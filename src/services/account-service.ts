@@ -67,8 +67,6 @@ class AccountService {
         var remainder = this.getRemainder(testAccountNumber, 97n);
         var checkDigitsControl = 98n - remainder === BigInt(controllNumber);
 
-        console.log(checkDigitsControl + "&&" + generalControl);
-
         return checkDigitsControl && generalControl;
     }
 

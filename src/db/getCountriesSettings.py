@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 
 HOST = 'https://en.wikipedia.org/wiki/International_Bank_Account_Number'
 WIKI_HOST = "https://en.wikipedia.org"
+EXAMPLES_HOST = "https://www.iban.com/structure"
 HEADERS = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)', 'accept': '*/*'}
 BASE_PATH = "./src/db"
@@ -127,6 +128,25 @@ def get_algorithms():
 
         return algorithms
 
+def get_iban_examples():
+    html = get_html(EXAMPLES_HOST)
+    examples = []
+    if(html.status_code == 200):
+        soup = BeautifulSoup(html.text, 'html.parser')
+        table = soup.find("table")
+        rows = table.find_all("tr")
+        rows.pop(0)
+        for row in rows:
+            columns = row.find_all("td")
+            name = get_text(columns[0])
+            example = get_text(columns[6])
+            examples.append({
+                "name": name,
+                "example": example 
+            })
+
+        return examples
+
 def get_format():
     html = get_html(HOST)
     algorithms = {}
@@ -187,5 +207,6 @@ def get_format():
 
 saveJson("country-formats", get_format())
 saveJson("country-algorithms", get_algorithms())
+saveJson("country-iban-examples", get_iban_examples())
 
 
